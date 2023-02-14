@@ -1,0 +1,12 @@
+C:\dev\C#\SimpleWeb\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\dev\C#\SimpleWeb\Entities\bin\Debug\net6.0\Entities.dll
+C:\dev\C#\SimpleWeb\Entities\bin\Debug\net6.0\Entities.pdb
+C:\dev\C#\SimpleWeb\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\dev\C#\SimpleWeb\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\C#\SimpleWeb\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\dev\C#\SimpleWeb\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\dev\C#\SimpleWeb\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\dev\C#\SimpleWeb\Entities\obj\Debug\net6.0\Entities.dll
+C:\dev\C#\SimpleWeb\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\dev\C#\SimpleWeb\Entities\obj\Debug\net6.0\Entities.pdb
+C:\dev\C#\SimpleWeb\Entities\obj\Debug\net6.0\ref\Entities.dll
