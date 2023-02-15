@@ -1,8 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.ConfigureCors();
+builder.Services.ConfigurePostgresContext(builder.Configuration);
+builder.Services.ConfigureRepositoryWrapper();
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -17,6 +20,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+app.UseCors("CorsPolicy");
 
 app.MapControllerRoute(
     name: "default",

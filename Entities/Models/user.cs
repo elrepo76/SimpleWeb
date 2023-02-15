@@ -1,6 +1,6 @@
 ﻿namespace Entities.Models
 {
-    public class user
+    public class User
     {
         public int id { get; set; }
         public string name { get; set; }

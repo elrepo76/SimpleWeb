@@ -17,7 +17,7 @@ namespace SimpleWeb.Controllers
         }
 
         [HttpPost]
-        public string Login(login login)
+        public string Login(Login login)
         {
             string msg = string.Empty;
 
