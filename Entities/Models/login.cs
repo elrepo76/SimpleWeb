@@ -2,8 +2,15 @@
 {
     public class Login
     {
-        public int id { get; set; }
-        public string? username { get; set; }
-        public string? password { get; set; }
+        public int Id { get; set; }
+
+        public string Username { get; set; } = null!;
+
+        public string Password { get; set; } = null!;
+
+        public int Userid { get; set; }
+        
+        // Navigation Property
+        public virtual User? User { get; set; }
     }
 }

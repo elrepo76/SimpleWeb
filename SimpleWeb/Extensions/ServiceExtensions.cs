@@ -1,6 +1,7 @@
 ﻿using Contracts;
 using Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Repository;
 
 public static class ServiceExtensions
@@ -17,7 +18,8 @@ public static class ServiceExtensions
     }
     public static void ConfigurePostgresContext(this IServiceCollection services, IConfiguration config)
     {
-        var connectionString = config["dbconn"];
+        var connectionString = config.GetValue<string>("ConnectionStrings:dbConn");
+
         services.AddDbContext<RepositoryContext>(o => o.UseNpgsql(connectionString));
     }
 

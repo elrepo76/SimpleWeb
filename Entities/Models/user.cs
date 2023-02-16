@@ -2,8 +2,12 @@
 {
     public class User
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public string address { get; set; }
+        public int Id { get; set; }
+
+        public string Name { get; set; } = null!;
+
+        public string Address { get; set; } = null!;
+
+        public virtual ICollection<Login> Logins { get; } = new List<Login>();
     }
 }
