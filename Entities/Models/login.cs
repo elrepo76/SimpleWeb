@@ -8,9 +8,9 @@
 
         public string Password { get; set; } = null!;
 
-        public int Userid { get; set; }
-        
+        public int UserId { get; set; }
+
         // Navigation Property
-        public virtual User? User { get; set; }
+        public virtual User User { get; set; } =  null!;
     }
 }

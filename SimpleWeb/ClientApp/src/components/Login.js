@@ -3,6 +3,7 @@
 const Login = () => {
     const [username, setUserName] = useState('');
     const [password, setPassword] = useState('');
+    const [user] = useState(null);
 
     const handleUserNameChange = (value) => {
         setUserName(value);
@@ -15,7 +16,8 @@ const Login = () => {
     const handleLogin = () => {
         const userlogin = {
             Username: username,
-            Password: password
+            Password: password,
+            User: user
         }
 
         const req = {

@@ -8,6 +8,6 @@
 
         public string Address { get; set; } = null!;
 
-        public virtual ICollection<Login> Logins { get; } = new List<Login>();
+        public virtual ICollection<Login> Logins { get; set; }
     }
 }

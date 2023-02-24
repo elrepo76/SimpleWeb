@@ -1,11 +1,11 @@
 ﻿using Entities.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace Entities
 {
     public class RepositoryContext : DbContext
     {
+        public RepositoryContext() { }
         public RepositoryContext(DbContextOptions<RepositoryContext> options)
             : base(options)
         {

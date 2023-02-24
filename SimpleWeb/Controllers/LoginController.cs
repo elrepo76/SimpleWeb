@@ -30,31 +30,13 @@ namespace SimpleWeb.Controllers
                 return BadRequest("Login is null");
             }
 
-            User userMatch = new User();
-
-            //var loginAccount = _repository.Login.FindByCondition(x => x.Username.Equals(model.Username));
-            //if (loginAccount == null)
-            //{
-            //    return NotFound(MESSAGE_NOT_FOUND);
-            //}
-
-            //return Ok(model.Username);
-
-            //var userAccount = _repository.User.FindByCondition(u => u.Login.Username.Equals(model.Username) &&
-            //    u.Login.Password.Equals(model.Password));
-
-            var accountExists = _repository.Login.FindByCondition(l => l.Username.Equals(model.Username) && l.Password.Equals(model.Password));
-            if (accountExists != null)
+            var login = _repository.Login.GetLoginDto(model);
+            if (login == null)
             {
-                foreach (var loginaccount in accountExists)
-                {
-                    if (loginaccount.User != null)
-                    {
-                        userMatch = loginaccount.User;
-                    }
-                }
+                return NotFound("Login not found."); 
             }
-            return Ok(userMatch.Name);
+
+            return Ok(login);
         }
 
 
